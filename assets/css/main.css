@@ -72,7 +72,33 @@ input, select, textarea {
 	appearance: none;
 }
 
-/* Basic */
+/* Basic *//* Remove default list styling */
+.nav-menu {
+	list-style-type: none; /* Remove bullets */
+	padding: 0;            /* Remove padding */
+	margin: 0;             /* Remove margin */
+	display: flex;         /* Arrange list items in a row */
+ }
+ 
+ /* Style the list items */
+ .nav-menu li {
+	margin-right: 20px;  /* Add some space between menu items */
+ }
+ 
+ /* Style the links */
+ .nav-menu li a {
+	text-decoration: none;   /* Remove underlines */
+	color: #333;             /* Set link color */
+	font-size: 16px;         /* Adjust font size */
+	font-weight: bold;       /* Make text bold */
+	transition: color 0.3s;  /* Smooth color transition on hover */
+ }
+ 
+ /* Optional: Change color on hover */
+ .nav-menu li a:hover {
+	color: #007BFF;          /* Change color on hover */
+ }
+ 
 
 	@-ms-viewport {
 		width: device-width;
@@ -229,8 +255,13 @@ input, select, textarea {
 			.container {
 				width: 100%;
 			}
-
+		
+		
+		
 		}
+
+/* resume */
+
 
 /* Row */
 
@@ -1908,7 +1939,7 @@ input, select, textarea {
 /* Wrappers */
 
 	#header-wrapper {
-		padding: 4.5em 0 3em 0;
+		padding: em 0 3em 0;
 	}
 
 	#features-wrapper {
@@ -1935,21 +1966,26 @@ input, select, textarea {
 
 	#logo {
 		display: inline-block;
+		
 	}
+	
+	
 
 		#logo h1 {
-			background: #ff4486;
-			color: #fff;
+			background: #E8E8E8;
+			color: #E8E8E8;
 			border-radius: 6px;
-			font-family: 'Oleo Script', serif;
-			font-weight: 400;
+			
 			padding: 0.25em 0.2em 0.25em 0.2em;
-			font-size: 3.25em;
-			letter-spacing: 0.05em;
+			
 			display: inline-block;
 			vertical-align: middle;
+			width: 100px;
+ 			height: 100px; /* Adjust to maintain aspect ratio */
 		}
-
+		.image.featured.logo { /* Or replace .logo with the actual class */
+			width: 80%; 
+		}
 		#logo span {
 			font-weight: 800;
 			line-height: 4.5em;
@@ -2685,4 +2721,64 @@ input, select, textarea {
 				text-align: left;
 			}
 
-	}
+		  /* General Page Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Contact Form Styles */
+        .contact-form {
+            background: white;
+            padding: 20px;
+            width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin: 20px auto; /* Center the form */
+            text-align: left; /* Align form elements to the left */
+        }
+
+        .contact-form h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .contact-form textarea {
+            resize: none; /* Prevents resizing */
+        }
+
+        /* Submit Button */
+        .contact-form .submit-btn {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form .submit-btn:hover {
+            background-color: #0056b3;
+        }	

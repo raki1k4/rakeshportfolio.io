@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Company Experience Animation</title>
+</head>
+<body>
+    <!-- Header -->
+	<div id="header-wrapper">
+		<header id="header" class="container">
+					
+			<!-- Logo -->
+			<div id="logo">
+				<h1><a href="index.html" class=" image featured logo"><img src="images/Image20240704163542-modified-removebg-preview.png" alt="logo" ></a></h1>
+				
+			</div>		 
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li class="current" style="white-space: nowrap;"><a href="index.html">Home</a></li>
+					<li style="white-space: nowrap;"><a href="About.html">About</a></li>
+					<li class="opener" style="user-select: none; cursor: pointer; white-space: nowrap; opacity: 1;"><a href="#">My Work</a></li>
+					<li style="white-space: nowrap;"><a href="getintouch.html">Contact me</a></li>
+				</ul>
+			</nav>
+
+		</header>
+	</div>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        .tcontainer {
+            position: relative;
+            width: 80vw;
+            height: 130px;
+            margin-top: 0px;
+        }
+
+        .t-road {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            height: 5px;
+            background: black;
+            transform: translateY(-50%);
+        }
+
+        .t-icon {
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(icon, #ffcc00, #ff9900);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            transition: left 1s linear;
+        }
+
+        .t-point {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: fit-content;
+            height: 50px;
+            background: #007bff;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .t-point:hover {
+            transform: scale(1.1);
+        }
+
+        #t-main-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 80vw;
+            margin-top: 20px;
+        }
+
+        #t-content {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #t-sidebar {
+            flex: 1;
+            padding: 20px;
+            background: #E7E7E7;
+            border-radius: 10px;
+        }
+
+        .company-info {
+            display: none;
+        }
+    </style>
+
+    <div class="tcontainer">
+        <div class="t-road"></div>
+        <div class="t-icon" id="t-icon"><i class="fas fa-plane"></i></div>
+        <div class="t-point" style="left: 20%;" data-company="company-a">Alten</div>
+        <div class="t-point" style="left: 50%;" data-company="company-b">Merritt</div>
+        <div class="t-point" style="left: 80%;" data-company="company-c">Intimetec</div>
+    </div>
+
+    <div id="t-main-wrapper">
+        <div id="t-content">
+            <article>
+                <div id="company-a" class="company-info">
+                    <h3>Technical Writer | Alten India | 13/05/2019 to 13/10/2020</h3>
+                    <ul>
+						<li>Experienced in the Creation and Updating of various manuals including Technical manuals, User manuals, Maintenance Manual, Repair Manual, and Illustrated Part Catalogue.</li>
+        				<li>Microsoft Manual of Style (MSTP), Simplified Technical English (STE), and the ability to adhere to company-specific style guides.</li>
+       					<li>Well-versed in gathering information from Subject Matter Experts to understand the technicality of any product.</li>
+					</ul>
+                </div>
+                <div id="company-b" class="company-info">
+                    <h3>Technical writer | Buhler (Deputed by Merritt Innovative Solutions) | 23/03/2022-30/09/2023</h3>
+                    <ul>
+						<li>Developed operational manual and operating instructions in Quanos SCHEMA ST4 for heavy machinery.</li>
+						<li>Edited and proofread technical documents for accuracy and consistency.</li>
+						<li>Worked closely with LCM and respective foreign stakeholders (Europe and China) to determine the accuracy and completeness of technical documentation.</li>
+						<li>Conducted training sessions for team members and colleagues from other teams on Single Source of Truth for the tool ST4.</li>
+						<li>Provided guidance and support to a fellow team member through effective communication.</li>
+						<li>Proved successful working within tight deadlines and a fast-paced environment.</li>
+						<li>Responsible for the work order management for the team.</li>
+						<li>Involved in developing the process to increase the quality of the manuals by preparing checklists and work-flow concepts.</li>
+					</ul>
+                </div>
+                <div id="company-c" class="company-info">
+                    <h3>Technical writer | InTimeTec | 19/10/2023 - Present </h3>
+                    <ul>
+                        <li>Created user manuals, UI/UX guides,  installation guides, and online help pages.</li>
+						<li>Developed business requirements document, proposal documents, and release notes.</li>
+						<li>Authored case studies and API documentation.</li>
+						<li>Created video tutorials to provide step-by-step guidance on feature usage.</li>
+						<li>Designed and implemented a Kanban board in Azure for a team of 5 technical writers to improve workflow efficiency.</li>
+						<li>Set up Git integration with Madcap Flare to streamline version control for documentation.</li>
+						<li>Led the migration of content from Confluence pages to Azure Wiki.</li>
+						<li>Led the migration of the CMS tool.</li>
+						<li>Assisted QA leads in creating a checklist in Excel to enhance quality assurance processes.</li>
+						<li>Collaborated with the marketing team to create a standardized Word-style template for the organization.</li>
+						<li>Developed and implemented an interview process and successfully led technical writer interviews.</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        <div id="t-sidebar">
+            <h2>My Resume</h2>
+            <a href="images/PDF/RAKESH_Resume.pdf" download class="button solid">Downlaod</a>
+        </div>
+    </div>
+    
+	<script src="experience.js"></script>
+</body>
+</html>
