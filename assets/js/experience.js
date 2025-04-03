@@ -3,6 +3,18 @@ document.addEventListener("DOMContentLoaded", function() {
     const points = Array.from(document.querySelectorAll(".t-point"));
     let currentIndex = 0;
     let direction = 1;
+    const message = document.getElementById("message"); // Get the message element
+
+    // Function to display the message
+    function showMessage() {
+        message.style.opacity = 1;
+        setTimeout(() => {
+            message.style.opacity = 0;
+        }, 5000); // Hide after 5 seconds (5000 milliseconds)
+    }
+
+    // Call the showMessage function when the page loads
+    showMessage();
 
     function movePlane() {
         if (currentIndex >= 0 && currentIndex < points.length) {

@@ -204,7 +204,7 @@ input, select, textarea {
 	}
 
 	hr {
-		border: 0;
+		border: 05px;
 		border-top: solid 1px #eee;
 	}
 
@@ -1968,8 +1968,10 @@ input, select, textarea {
 		display: inline-block;
 		
 	}
-	
-	
+		#logo img {
+			width: 80%;
+			height: auto;
+		}
 
 		#logo h1 {
 			background: #E8E8E8;
@@ -1983,17 +1985,7 @@ input, select, textarea {
 			width: 100px;
  			height: 100px; /* Adjust to maintain aspect ratio */
 		}
-		.image.featured.logo { /* Or replace .logo with the actual class */
-			width: 80%; 
-		}
-		#logo span {
-			font-weight: 800;
-			line-height: 4.5em;
-			letter-spacing: 0.025em;
-			font-size: 0.9em;
-			vertical-align: middle;
-			margin: 0 0 0 1.25em;
-		}
+		
 
 /* Nav */
 
@@ -2721,64 +2713,4 @@ input, select, textarea {
 				text-align: left;
 			}
 
-		  /* General Page Styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
-
-        /* Contact Form Styles */
-        .contact-form {
-            background: white;
-            padding: 20px;
-            width: 350px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            margin: 20px auto; /* Center the form */
-            text-align: left; /* Align form elements to the left */
-        }
-
-        .contact-form h2 {
-            margin-bottom: 10px;
-        }
-
-        .contact-form .form-group {
-            margin-bottom: 15px;
-        }
-
-        .contact-form label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        .contact-form textarea {
-            resize: none; /* Prevents resizing */
-        }
-
-        /* Submit Button */
-        .contact-form .submit-btn {
-            width: 100%;
-            background-color: #007bff;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .contact-form .submit-btn:hover {
-            background-color: #0056b3;
-        }	
+		}
