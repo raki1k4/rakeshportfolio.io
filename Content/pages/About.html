@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <title>Company Experience Animation</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <title>Work Experience</title>
 </head>
 <body>
     <!-- Header -->
@@ -13,16 +13,16 @@
 					
 			<!-- Logo -->
 			<div id="logo">
-				<h1><a href="index.html" class=" image featured logo"><img src="images/Image20240704163542-modified-removebg-preview.png" alt="logo" ></a></h1>
+				<h1><a href="index.html" ><img src="/Resources/Photos/Logo/logo.png" alt="logo" ></a></h1>
 				
 			</div>		 
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-					<li class="current" style="white-space: nowrap;"><a href="index.html">Home</a></li>
-					<li style="white-space: nowrap;"><a href="About.html">About</a></li>
-					<li class="opener" style="user-select: none; cursor: pointer; white-space: nowrap; opacity: 1;"><a href="#">My Work</a></li>
-					<li style="white-space: nowrap;"><a href="getintouch.html">Contact me</a></li>
+                    <li style="white-space: nowrap;"><a href="/index.html">Home</a></li>
+					<li class="current" style="white-space: nowrap;"><a href="/Content/pages/About.html">About</a></li>
+					<li style="white-space: nowrap;"><a href="/Content/pages/My Work.html">My Work</a></li>
+					<li style="white-space: nowrap;"><a href="/Content/pages/contact form.html">Contact me</a></li>
 				</ul>
 			</nav>
 
@@ -67,6 +67,19 @@
             transform: translate(-50%, -50%);
             cursor: pointer;
             transition: left 1s linear;
+        }
+        #message {
+            position: absolute;
+            top: 80px;
+            left: -1.5%;
+            transform: translateX(-50%);
+            background-color: whitesmoke;
+            color: #000000;
+            padding: 2px;
+            border-radius: 80px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            font-weight: bold; /* Added this line */
         }
 
         .t-point {
@@ -117,6 +130,7 @@
     <div class="tcontainer">
         <div class="t-road"></div>
         <div class="t-icon" id="t-icon"><i class="fas fa-plane"></i></div>
+        <div id="message">Click!</div>
         <div class="t-point" style="left: 20%;" data-company="company-a">Alten</div>
         <div class="t-point" style="left: 50%;" data-company="company-b">Merritt</div>
         <div class="t-point" style="left: 80%;" data-company="company-c">Intimetec</div>
@@ -128,9 +142,9 @@
                 <div id="company-a" class="company-info">
                     <h3>Technical Writer | Alten India | 13/05/2019 to 13/10/2020</h3>
                     <ul>
-						<li>Experienced in the Creation and Updating of various manuals including Technical manuals, User manuals, Maintenance Manual, Repair Manual, and Illustrated Part Catalogue.</li>
-        				<li>Microsoft Manual of Style (MSTP), Simplified Technical English (STE), and the ability to adhere to company-specific style guides.</li>
-       					<li>Well-versed in gathering information from Subject Matter Experts to understand the technicality of any product.</li>
+						<li>Authored and reviewed various manuals, like the IPC (C2).</li>
+        				<li>Followed ATA standards, Simplified Technical English (STE), and the ability to adhere to company-specific style guides.</li>
+       					<li>Well-versed in gathering information from Subject Matter Experts.</li>
 					</ul>
                 </div>
                 <div id="company-b" class="company-info">
@@ -166,10 +180,10 @@
         </div>
         <div id="t-sidebar">
             <h2>My Resume</h2>
-            <a href="images/PDF/RAKESH_Resume.pdf" download class="button solid">Downlaod</a>
+            <a href="/Resources/pdf/resume/RAKESH.pdf" class="button icon solid fa-arrow-circle-down">Downlaod</a>
         </div>
     </div>
     
-	<script src="experience.js"></script>
+	<script src="/assets/js/experience.js"></script>
 </body>
 </html>
