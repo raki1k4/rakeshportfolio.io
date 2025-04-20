@@ -1818,6 +1818,7 @@ input, select, textarea {
 
 		.box.feature {
 			padding: 0;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
 		}
 
 			.box.feature .inner {
@@ -1841,6 +1842,11 @@ input, select, textarea {
 					border-bottom-left-radius: 0;
 					border-bottom-right-radius: 0;
 				}
+
+			.box.feature:hover {
+				transform: scale(1.05);
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+			}
 
 /* Icons */
 
@@ -2714,3 +2720,118 @@ input, select, textarea {
 			}
 
 		}
+
+/* Hover Effects for Navigation */
+#nav ul li a:hover {
+	/* Removed hover effect */
+}
+
+/* Animation for Features Section */
+.box.feature {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box.feature:hover {
+	transform: scale(1.05);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel Styling */
+.carousel {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+}
+.carousel img {
+	width: 100%;
+	height: auto;
+	scroll-snap-align: center;
+}
+
+/* Interactive Message */
+.interactive-message {
+	position: absolute;
+	top: 80px;
+	left: -1.5%;
+	transform: translateX(-50%);
+	background-color: #007bff; /* Blue background for better visibility */
+	color: #ffffff; /* White text for contrast */
+	padding: 5px 10px;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 14px;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.t-icon:hover + .interactive-message {
+	opacity: 1;
+	transform: translateX(-50%) scale(1.1); /* Slight scale effect on hover */
+}
+
+/* Button Style */
+.button-style {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: auto;
+	padding: 10px 20px; /* Added padding for better spacing */
+	background: #007bff; /* Blue background for visibility */
+	color: #ffffff; /* White text for contrast */
+	border-radius: 20px; /* Rounded corners for a modern look */
+	text-align: center;
+	font-weight: bold; /* Bold text for emphasis */
+	cursor: pointer;
+	transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.button-style:hover {
+	transform: scale(1.1); /* Slight zoom effect on hover */
+	background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styled Point */
+.styled-point {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 10px 15px; /* Added padding for better spacing */
+	background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient background for a modern look */
+	color: #ffffff; /* White text for contrast */
+	border-radius: 20px; /* Rounded corners for a polished appearance */
+	font-weight: bold; /* Bold text for emphasis */
+	font-size: 14px; /* Slightly larger font size */
+	text-align: center;
+	cursor: pointer;
+	transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.styled-point:hover {
+	transform: scale(1.1); /* Slight zoom effect on hover */
+	background: linear-gradient(135deg, #0056b3, #003f7f); /* Darker gradient on hover */
+}
+
+.t-point, .styled-point {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: fit-content;
+	height: 50px;
+	background: #007bff;
+	border-radius: 10px;
+	text-align: center;
+	display: flex; /* Use flexbox for vertical alignment */
+	justify-content: center;
+	align-items: center; /* Align text vertically */
+	color: white;
+	cursor: pointer;
+	transition: transform 0.2s ease, background-color 0.3s ease; /* Reduced hover movement */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.t-point:hover, .styled-point:hover {
+	transform: scale(1.05); /* Slight zoom effect */
+	background-color: #0056b3; /* Darker blue on hover */
+}
